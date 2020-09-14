@@ -16,13 +16,13 @@ public class MainProgram {
 		
 		Scanner input1 = new Scanner(System.in);
 		
-		System.out.println("Enter username");
+		System.out.println("Enter Candidate Name: ");
 		
 		String userName = input1.nextLine();
 		
 		Scanner input2 = new Scanner(System.in);
 		
-		System.out.println("Enter percentage");
+		System.out.println("Enter grade percentage: ");
 		
 		double percentage = input2.nextDouble();	
 		
@@ -55,29 +55,29 @@ public class MainProgram {
 		switch(grade) {
 		
 			case 'A' :
-				System.out.println("Excellent!" + userName + " You got A Grade");
+				System.out.println("Excellent!" + userName + " You got A Grade.");
 				break;
 				
 			case 'B' :
-				System.out.println("Well done " + userName + " you got "+ grade + " Grade");
+				System.out.println("Well done " + userName + " you got "+ grade + " Grade. ");
 				betterGrade = (80-percentage);
 				System.out.println("You need to get "+ decimalFormat.format(betterGrade) + "% extra to get A Grade");
 				break;
 				
 			case 'C' :
-				System.out.println("Well done " + userName + " you got "+ grade + " Grade");
+				System.out.println("Well done " + userName + " you got "+ grade + " Grade. ");
 				betterGrade = (70-percentage);
 				System.out.println("You need to get "+ decimalFormat.format(betterGrade) + "% extra to get B Grade");
 				break;
 				
 			case 'D' :
-				System.out.println(userName + " You just passed with "+ grade + " Grade");
+				System.out.println(userName + " You just passed with "+ grade + " Grade. ");
 				betterGrade = (60-percentage);
 				System.out.println("You need to get "+ decimalFormat.format(betterGrade) + "% extra to get C Grade");
 				break;
 				
 			case 'F' :
-				System.out.println("You just Failed");
+				System.out.println("You just Failed. ");
 				betterGrade = (50-percentage);
 				System.out.println("You need to get "+ decimalFormat.format(betterGrade) + "% extra to get D Grade in-order to pass the course");
 				break;
