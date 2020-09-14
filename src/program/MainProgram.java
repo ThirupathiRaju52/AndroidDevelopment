@@ -22,28 +22,35 @@ public class MainProgram {
 		
 		Scanner input2 = new Scanner(System.in);
 		
-		System.out.println("Enter username");
+		System.out.println("Enter percentage");
 		
 		double percentage = input2.nextDouble();	
 		
 		if(percentage>=80 && percentage<=100) {
 			
-	         grade = 'A';
-	      }else if(percentage>=70 && percentage<=79.9){
-	         grade = 'B';
-	      }
-	      else if(percentage>=60 && percentage<=69.9){
-	         grade = 'C';
-	      }
-	      else if(percentage>=50 && percentage<59.9){
-		         grade = 'D';
-		   } else if (percentage<0 || percentage>100) {
-			   grade = 'I';
-		   }
-	      else {
-	    	  
-	    	  grade = 'F';
-	      }
+			grade = 'A';
+			
+		} else if(percentage>=70 && percentage<=79.9){
+			
+			grade = 'B';
+			
+		} else if(percentage>=60 && percentage<=69.9){
+			
+			grade = 'C';
+			
+		} else if(percentage>=50 && percentage<59.9){
+			
+			grade = 'D';
+		
+		} else if (percentage<0 || percentage>100) { 
+			
+			grade = 'I';
+			
+		} else {
+			
+			grade = 'F';
+			
+		}
 		
 		switch(grade) {
 		
